@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <!-- bootstrap CDN link -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    
+
+    <style>
+        .hr-gap{
+            margin-right: 350px;
+        }
+        .product-price{
+            margin-top: 50px;
+        }
+
+        .amount-gap{
+            margin-left: 75px;
+        }
+
+        .promo{
+            margin-top: 50px;
+        }
+        footer{
+            text-align: center;
+        }
+
+        .footer-hr{
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="conatiner d-flex justify-content-center m-5">
+
+            <div class="left-side p-3">
+                <img width="500px" src="images/mac.png" alt="">
+            </div>
+
+            <div class="right-side p-3">
+                <h1>Customize your Blue 24-inch iMac With Apple M1 chip</h1>
+                <p>Apple MacBook Pro 13.3-Inch Retina Display 8-core Apple M1 chip with 8GB RAM, 512GB SSD (MYD92) Space Gray13.3-inch (diagonal) LED-backlit display with IPS technology; 2560-by-1600 native resolution at 227 pixels per inch with support for millions of colors</p>
+
+                <h4 class="pb-1 pt-4">Memory</h4>
+                <button id="memory-small" class="btn btn-outline-secondary"><span id="memory-sm">8</span>GB unified Memory</button>
+                <button id="memory-large" class="btn btn-outline-secondary"> <span id="memory-lg">16</span>GB unified Memory</button>
+
+                <h4 class="pb-1 pt-4">Storage</h4>
+                <button id="ssd_small" class="btn btn-outline-secondary"><span id="ssd_sm">256</span>GB SSD Storage</button>
+                <button id="ssd_mid" class="btn btn-outline-secondary"><span id="ssd_m">512</span>GB SSD Storage</button>
+                <button  id="ssd_large" class="btn btn-outline-secondary"><span id="ssd_lg">1</span>TB SSD Storage</button>
+
+                <h4 class="pb-1 pt-4">Chose your delivery option</h4>
+                <button id="low" class="btn btn-outline-secondary">Friday, Aug25 Free Prime Delivery</button>
+                <button id="high" class="btn btn-outline-secondary">Friday, Aug21 Free Prime Delivery</button>
+
+                <div class="product-price">
+                <h6>Best Price  <span class="amount-gap">$</span><span>1299</span></h6><hr class="hr-gap">
+                <h6>Extra Memory   <span class="ms-5">$</span><span id="extra_memory_price">0</span></h6><hr class="hr-gap">
+                <h6>Extra Storage Cost  <span class="ms-3">$</span><span id="extra_storage">0</span></h6><hr class="hr-gap">
+                <h6>Delivery Charge <span style="margin-left:35px">$</span><span id="delivery">0</span></h6><hr class="hr-gap">
+                <h6>Total Price    <span class="amount-gap">$</span><span id="total-amount">1299</span></h6> 
+                </div>
+
+                <h6 class="promo">Add Promo Code</h6>
+                <input  type="text" class="p-1 border border-success p-2 border-opacity-10" name="" id="delete-confirm">
+                <button id="btn-active" class="btn btn-danger" disabled>Apply</button>                     
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+            <div>
+                <hr class="footer-hr">
+                <h1>Total:  $<span id="total">1299</span></h1>
+            </div>
+    </footer>
+
+    
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
